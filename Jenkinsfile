@@ -5,7 +5,7 @@ pipeline {
     dockerImage = ''
   }
   agent { 
-    docker { 
+    kubernetes { 
       image 'python:alpine3.7'
       args '-p 5000:5000'
         } 
