@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "andcon/my-cicd-app"
+    registry = "accodepull/my-cicd-app"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
@@ -91,7 +91,14 @@ spec:
   selector:
     app: my-cicd-app
   ports:
-    - protocol: TCP
+    - protocol: T
+
+
+qq
+
+
+
+P
       port: 5000
       targetPort: 5000
   type: NodePort
