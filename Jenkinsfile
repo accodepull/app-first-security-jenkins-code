@@ -67,8 +67,7 @@ pipeline {
       }
     }
     // Uncomment for K8s app diployment step
-    // Commented section starts
-    /*
+    // UnCommented section starts
     stage('Deploy Application') {
       agent {
         kubernetes {
@@ -121,8 +120,7 @@ spec:
 EOF"""
         }
       }
-    }
-   */ 
-  // Commented section ends
+    } 
+  // UnCommented section ends
   }
 }
