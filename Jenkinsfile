@@ -4,12 +4,16 @@ pipeline {
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
+  //Comment Section Start
+  /*
   agent { 
-    kubernetes { 
+    docker { 
       image 'python:alpine3.7'
       args '-p 5000:5000'
         } 
   }
+  */
+  //Comment Section End
   stages {
     stage('Build') {
       steps {
